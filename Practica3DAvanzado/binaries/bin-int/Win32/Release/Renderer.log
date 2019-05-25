@@ -1,0 +1,28 @@
+﻿  Mesh.cpp
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\mesh.cpp(64): warning C4244: 'inicializando': conversión de 'double' a 'float'; posible pérdida de datos
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\mesh.cpp(68): warning C4244: 'argumento': conversión de 'float' a 'int'; posible pérdida de datos
+  Obj_Loader.cpp
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\obj_loader.cpp(57): warning C4018: '<': no coinciden signed/unsigned
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\obj_loader.cpp(82): warning C4244: 'argumento': conversión de '_Ty' a 'int'; posible pérdida de datos
+          with
+          [
+              _Ty=tinyobj::real_t
+          ]
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\obj_loader.cpp(81): warning C4244: 'argumento': conversión de '_Ty' a 'int'; posible pérdida de datos
+          with
+          [
+              _Ty=tinyobj::real_t
+          ]
+c:\users\versus\desktop\practica3d\practica3davanzado\code\sources\obj_loader.cpp(80): warning C4244: 'argumento': conversión de '_Ty' a 'int'; posible pérdida de datos
+          with
+          [
+              _Ty=tinyobj::real_t
+          ]
+  View.cpp
+  main.cpp
+  Generando código
+  0 of 2058 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Generación de código finalizada
+  Renderer.vcxproj -> C:\Users\Versus\Desktop\Practica3D\Practica3DAvanzado\projects\Renderer\..\..\binaries\bin\Win32\Release\Renderer.exe

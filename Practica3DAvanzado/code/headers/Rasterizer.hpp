@@ -1,13 +1,6 @@
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
- *                                                                             *
- *  Started by Ángel on december of 2013                                       *
- *                                                                             *
- *  This is free software released into the public domain.                     *
- *                                                                             *
- *  angel.rodriguez@esne.edu                                                   *
- *                                                                             *
-\* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/////////////////////////////
+	//Author: Luis Chamarro Alonso
+	//Date: 15/02/2019
 
 #ifndef RASTERIZER_HEADER
 #define RASTERIZER_HEADER

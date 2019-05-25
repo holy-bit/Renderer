@@ -1,13 +1,6 @@
-
-/* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *\
- *                                                                             *
- *  Started by Ángel on november of 2013                                       *
- *                                                                             *
- *  This is free software released into the public domain.                     *
- *                                                                             *
- *  angel.rodriguez@esne.edu                                                   *
- *                                                                             *
-\* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+/////////////////////////////
+	//Author: Luis Chamarro Alonso
+	//Date: 15/02/2019
 
 #ifndef COLOR_BUFFER_HEADER
 #define COLOR_BUFFER_HEADER

@@ -1,7 +1,6 @@
 /////////////////////////////
 	//Author: Luis Chamarro Alonso
 	//Date: 15/02/2019
-	//Videojuegos-Esne: 4.3
 
 #include "View.hpp"
 #include <SFML/Window.hpp>

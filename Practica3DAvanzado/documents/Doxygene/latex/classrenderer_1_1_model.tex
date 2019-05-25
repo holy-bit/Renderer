@@ -1,0 +1,190 @@
+\hypertarget{classrenderer_1_1_model}{}\section{renderer\+::Model Class Reference}
+\label{classrenderer_1_1_model}\index{renderer::Model@{renderer::Model}}
+
+
+{\ttfamily \#include $<$Model.\+hpp$>$}
+
+Inheritance diagram for renderer\+::Model\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classrenderer_1_1_model}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structrenderer_1_1_model_1_1_transform}{Transform}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_model_aa34808094210c07af4ab1aba76cf89f6}{Model}} ()=default
+\item 
+std\+::list$<$ \mbox{\hyperlink{classrenderer_1_1_mesh}{Mesh}} $>$ \& \mbox{\hyperlink{classrenderer_1_1_model_a88df819cc280f518023364c9181aff64}{get\+\_\+meshes}} ()
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_model_a47dd52d773bbcde8c2eceb704e904e4b}{set\+Parent}} (\mbox{\hyperlink{classrenderer_1_1_model}{Model}} $\ast$parent\+\_\+parameteer)
+\item 
+\mbox{\hyperlink{classrenderer_1_1_model}{Model}} $\ast$ \mbox{\hyperlink{classrenderer_1_1_model_a2e81d98304670f47465b18010ec342cb}{get\+Model}} ()
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_model_af7da088f74cd608807beff747801f035}{rotateY}} (float angle)
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_model_ab9f8435be21c68241138f3ccea924ad8}{rotateX}} (float angle)
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_model_a7773b13f4cd297edf1d11788066eb510}{update}} ()
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_model_aa244954142032d5aaed2d17585fe6a91}{render}} (\mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} $>$ \&rasterizer)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_model}{Model}} $\ast$ \mbox{\hyperlink{classrenderer_1_1_model_a49de683276c3c000bea474730008bc7d}{parent}} = nullptr
+\item 
+\mbox{\hyperlink{structrenderer_1_1_model_1_1_transform}{Transform}} \mbox{\hyperlink{classrenderer_1_1_model_a9689817daed05747058d3b919af724fd}{transform}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \mbox{\hyperlink{classrenderer_1_1_mesh}{Mesh}} $>$ \mbox{\hyperlink{classrenderer_1_1_model_abac271da33939950840f9ecf1b17b941}{meshes}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 20 of file Model.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_model_aa34808094210c07af4ab1aba76cf89f6}\label{classrenderer_1_1_model_aa34808094210c07af4ab1aba76cf89f6}} 
+\index{renderer::Model@{renderer::Model}!Model@{Model}}
+\index{Model@{Model}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{Model()}{Model()}}
+{\footnotesize\ttfamily renderer\+::\+Model\+::\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_model_a88df819cc280f518023364c9181aff64}\label{classrenderer_1_1_model_a88df819cc280f518023364c9181aff64}} 
+\index{renderer::Model@{renderer::Model}!get\_meshes@{get\_meshes}}
+\index{get\_meshes@{get\_meshes}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{get\_meshes()}{get\_meshes()}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classrenderer_1_1_mesh}{Mesh}}$>$\& renderer\+::\+Model\+::get\+\_\+meshes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Devuelve la lista de mallas que posee el modelo. 
+
+Definition at line 48 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_a2e81d98304670f47465b18010ec342cb}\label{classrenderer_1_1_model_a2e81d98304670f47465b18010ec342cb}} 
+\index{renderer::Model@{renderer::Model}!getModel@{getModel}}
+\index{getModel@{getModel}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{getModel()}{getModel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_model}{Model}}$\ast$ renderer\+::\+Model\+::get\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Retorna puntero de este modelo. 
+
+Definition at line 60 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_aa244954142032d5aaed2d17585fe6a91}\label{classrenderer_1_1_model_aa244954142032d5aaed2d17585fe6a91}} 
+\index{renderer::Model@{renderer::Model}!render@{render}}
+\index{render@{render}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void renderer\+::\+Model\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} $>$ \&}]{rasterizer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 87 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_ab9f8435be21c68241138f3ccea924ad8}\label{classrenderer_1_1_model_ab9f8435be21c68241138f3ccea924ad8}} 
+\index{renderer::Model@{renderer::Model}!rotateX@{rotateX}}
+\index{rotateX@{rotateX}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{rotateX()}{rotateX()}}
+{\footnotesize\ttfamily void renderer\+::\+Model\+::rotateX (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aplica rotacion en el eje X 
+\begin{DoxyParams}{Parameters}
+{\em float} & angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 72 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_af7da088f74cd608807beff747801f035}\label{classrenderer_1_1_model_af7da088f74cd608807beff747801f035}} 
+\index{renderer::Model@{renderer::Model}!rotateY@{rotateY}}
+\index{rotateY@{rotateY}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{rotateY()}{rotateY()}}
+{\footnotesize\ttfamily void renderer\+::\+Model\+::rotateY (\begin{DoxyParamCaption}\item[{float}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Aplica rotacion en el eje Y 
+\begin{DoxyParams}{Parameters}
+{\em float} & angulo al que va a rotar; \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 66 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_a47dd52d773bbcde8c2eceb704e904e4b}\label{classrenderer_1_1_model_a47dd52d773bbcde8c2eceb704e904e4b}} 
+\index{renderer::Model@{renderer::Model}!setParent@{setParent}}
+\index{setParent@{setParent}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{setParent()}{setParent()}}
+{\footnotesize\ttfamily void renderer\+::\+Model\+::set\+Parent (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrenderer_1_1_model}{Model}} $\ast$}]{parent\+\_\+parameteer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Establece un puntero al modelo que va a ser el padre. 
+\begin{DoxyParams}{Parameters}
+{\em Model$\ast$} & Puntero al modelo padre. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_a7773b13f4cd297edf1d11788066eb510}\label{classrenderer_1_1_model_a7773b13f4cd297edf1d11788066eb510}} 
+\index{renderer::Model@{renderer::Model}!update@{update}}
+\index{update@{update}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void renderer\+::\+Model\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Definition at line 74 of file Model.\+hpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_model_abac271da33939950840f9ecf1b17b941}\label{classrenderer_1_1_model_abac271da33939950840f9ecf1b17b941}} 
+\index{renderer::Model@{renderer::Model}!meshes@{meshes}}
+\index{meshes@{meshes}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{meshes}{meshes}}
+{\footnotesize\ttfamily std\+::list$<$\mbox{\hyperlink{classrenderer_1_1_mesh}{Mesh}}$>$ renderer\+::\+Model\+::meshes\hspace{0.3cm}{\ttfamily [private]}}
+
+Lista de todas las mallas del modelo. 
+
+Definition at line 37 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_a49de683276c3c000bea474730008bc7d}\label{classrenderer_1_1_model_a49de683276c3c000bea474730008bc7d}} 
+\index{renderer::Model@{renderer::Model}!parent@{parent}}
+\index{parent@{parent}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{parent}{parent}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_model}{Model}}$\ast$ renderer\+::\+Model\+::parent = nullptr}
+
+Puntero al modelo padre. 
+
+Definition at line 40 of file Model.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_model_a9689817daed05747058d3b919af724fd}\label{classrenderer_1_1_model_a9689817daed05747058d3b919af724fd}} 
+\index{renderer::Model@{renderer::Model}!transform@{transform}}
+\index{transform@{transform}!renderer::Model@{renderer::Model}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structrenderer_1_1_model_1_1_transform}{Transform}} renderer\+::\+Model\+::transform}
+
+\mbox{\hyperlink{structrenderer_1_1_model_1_1_transform}{Transform}} que contiene las distintas transformaciones del modelo 
+
+Definition at line 41 of file Model.\+hpp.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Practica3\+D/\+Practica3\+D\+Avanzado/code/headers/\mbox{\hyperlink{_model_8hpp}{Model.\+hpp}}\end{DoxyCompactItemize}

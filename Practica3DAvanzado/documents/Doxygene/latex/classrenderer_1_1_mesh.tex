@@ -1,0 +1,370 @@
+\hypertarget{classrenderer_1_1_mesh}{}\section{renderer\+::Mesh Class Reference}
+\label{classrenderer_1_1_mesh}\index{renderer::Mesh@{renderer::Mesh}}
+
+
+{\ttfamily \#include $<$Mesh.\+hpp$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} \mbox{\hyperlink{classrenderer_1_1_mesh_aeb2cb93e67b18f09a15e7ece644f919b}{Color\+\_\+\+Buffer}}
+\item 
+typedef \mbox{\hyperlink{structrenderer_1_1_color___buffer___rgba8888_1_1_color}{Color\+\_\+\+Buffer\+::\+Color}} \mbox{\hyperlink{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}{Color}}
+\item 
+typedef Point4f \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{Vertex}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{Vertex}} $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}}
+\item 
+typedef vector$<$ int $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}{Index\+\_\+\+Buffer}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}{Color}} $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}}
+\item 
+typedef Point4i \mbox{\hyperlink{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}{VertexI}}
+\item 
+typedef vector$<$ \mbox{\hyperlink{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}{VertexI}} $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{Vertex\+\_\+\+BufferI}}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_a9599aef3cd7b6e8b4643a408445f272b}{Mesh}} ()=default
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_mesh_a6d48b23fa3c6fd467e15fdd4f12a6f5a}{set\+\_\+\+Vertex}} (\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \&vertex\+\_\+P, \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \&normalsP, \mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}} colorsP)
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_mesh_aa2e7ea68a34e4f2f5853136c1efcff7a}{set\+\_\+index}} (\mbox{\hyperlink{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}{Index\+\_\+\+Buffer}} \&index)
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_mesh_acaed062c3d1abf115f22f7dba87ed69c}{set\+\_\+\+Transform}} (Transformation3f \&transformP)
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_mesh_a794be273829e332a1ba81d9f5af3b60e}{update}} ()
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_mesh_a09c57a296515d4db731b2aa0f4eba284}{render}} (\mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} $>$ \&rasterizer)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classrenderer_1_1_mesh_a693d10fdfac269136fe703a53a7cc27e}{is\+\_\+frontface}} (const \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{Vertex}} $\ast$const projected\+\_\+vertices, const int $\ast$const indices)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \mbox{\hyperlink{classrenderer_1_1_mesh_a09d0844ff04aec6c504b44c261cf81e1}{vertexs}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \mbox{\hyperlink{classrenderer_1_1_mesh_a88ff332e89b6278946fc7f61f0014d0d}{normals}}
+\item 
+vector$<$ int $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_a67f50b2b651091b38567c8fd69e9e4b3}{index\+\_\+positions}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}} \mbox{\hyperlink{classrenderer_1_1_mesh_aa32dd73ecaaaf1f5594f12c6208df116}{original\+\_\+colors}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}} \mbox{\hyperlink{classrenderer_1_1_mesh_a548a365c33a70a93e8a1f7c4085b1ec8}{light\+\_\+colors}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \mbox{\hyperlink{classrenderer_1_1_mesh_a670137619aeda905f64bc784265ccbe5}{transformed\+\_\+vertices}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \mbox{\hyperlink{classrenderer_1_1_mesh_a17a0e6c0c5d85b761ae43ec601a346ea}{transformed\+\_\+normals}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{Vertex\+\_\+\+BufferI}} \mbox{\hyperlink{classrenderer_1_1_mesh_a895006513e43820bed66a13e6860c072}{clipped\+\_\+vertices}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{Vertex\+\_\+\+BufferI}} \mbox{\hyperlink{classrenderer_1_1_mesh_ab375734fbd3ad209425e38f89f64ab5d}{display\+\_\+vertices}}
+\item 
+Transformation3f \mbox{\hyperlink{classrenderer_1_1_mesh_a6d4a64b911980ccd50a4fc54830ce653}{transform}}
+\item 
+Point3f \mbox{\hyperlink{classrenderer_1_1_mesh_a6bf2d3288700befda4d24c6ee44e7a3f}{light\+\_\+vector}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 29 of file Mesh.\+hpp.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}\label{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}} 
+\index{renderer::Mesh@{renderer::Mesh}!Color@{Color}}
+\index{Color@{Color}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structrenderer_1_1_color___buffer___rgba8888_1_1_color}{Color\+\_\+\+Buffer\+::\+Color}} \mbox{\hyperlink{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}{renderer\+::\+Mesh\+::\+Color}}}
+
+
+
+Definition at line 35 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_aeb2cb93e67b18f09a15e7ece644f919b}\label{classrenderer_1_1_mesh_aeb2cb93e67b18f09a15e7ece644f919b}} 
+\index{renderer::Mesh@{renderer::Mesh}!Color\_Buffer@{Color\_Buffer}}
+\index{Color\_Buffer@{Color\_Buffer}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Color\_Buffer}{Color\_Buffer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} \mbox{\hyperlink{classrenderer_1_1_mesh_aeb2cb93e67b18f09a15e7ece644f919b}{renderer\+::\+Mesh\+::\+Color\+\_\+\+Buffer}}}
+
+
+
+Definition at line 34 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}\label{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}} 
+\index{renderer::Mesh@{renderer::Mesh}!Index\_Buffer@{Index\_Buffer}}
+\index{Index\_Buffer@{Index\_Buffer}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Index\_Buffer}{Index\_Buffer}}
+{\footnotesize\ttfamily typedef vector$<$ int $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}{renderer\+::\+Mesh\+::\+Index\+\_\+\+Buffer}}}
+
+
+
+Definition at line 38 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}\label{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}} 
+\index{renderer::Mesh@{renderer::Mesh}!Vertex@{Vertex}}
+\index{Vertex@{Vertex}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Vertex}{Vertex}}
+{\footnotesize\ttfamily typedef Point4f \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{renderer\+::\+Mesh\+::\+Vertex}}}
+
+
+
+Definition at line 36 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}\label{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}} 
+\index{renderer::Mesh@{renderer::Mesh}!Vertex\_Buffer@{Vertex\_Buffer}}
+\index{Vertex\_Buffer@{Vertex\_Buffer}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Vertex\_Buffer}{Vertex\_Buffer}}
+{\footnotesize\ttfamily typedef vector$<$ \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{Vertex}} $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{renderer\+::\+Mesh\+::\+Vertex\+\_\+\+Buffer}}}
+
+
+
+Definition at line 37 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}\label{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}} 
+\index{renderer::Mesh@{renderer::Mesh}!Vertex\_BufferI@{Vertex\_BufferI}}
+\index{Vertex\_BufferI@{Vertex\_BufferI}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Vertex\_BufferI}{Vertex\_BufferI}}
+{\footnotesize\ttfamily typedef vector$<$\mbox{\hyperlink{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}{VertexI}}$>$ \mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{renderer\+::\+Mesh\+::\+Vertex\+\_\+\+BufferI}}}
+
+
+
+Definition at line 41 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}\label{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}} 
+\index{renderer::Mesh@{renderer::Mesh}!Vertex\_Colors@{Vertex\_Colors}}
+\index{Vertex\_Colors@{Vertex\_Colors}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Vertex\_Colors}{Vertex\_Colors}}
+{\footnotesize\ttfamily typedef vector$<$ \mbox{\hyperlink{classrenderer_1_1_mesh_a71276bd4511d4593f1deaae6d464e811}{Color}} $>$ \mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{renderer\+::\+Mesh\+::\+Vertex\+\_\+\+Colors}}}
+
+
+
+Definition at line 39 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}\label{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}} 
+\index{renderer::Mesh@{renderer::Mesh}!VertexI@{VertexI}}
+\index{VertexI@{VertexI}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{VertexI}{VertexI}}
+{\footnotesize\ttfamily typedef Point4i \mbox{\hyperlink{classrenderer_1_1_mesh_a5fd87426b3c8820d68414531423446fc}{renderer\+::\+Mesh\+::\+VertexI}}}
+
+
+
+Definition at line 40 of file Mesh.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a9599aef3cd7b6e8b4643a408445f272b}\label{classrenderer_1_1_mesh_a9599aef3cd7b6e8b4643a408445f272b}} 
+\index{renderer::Mesh@{renderer::Mesh}!Mesh@{Mesh}}
+\index{Mesh@{Mesh}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{Mesh()}{Mesh()}}
+{\footnotesize\ttfamily renderer\+::\+Mesh\+::\+Mesh (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a693d10fdfac269136fe703a53a7cc27e}\label{classrenderer_1_1_mesh_a693d10fdfac269136fe703a53a7cc27e}} 
+\index{renderer::Mesh@{renderer::Mesh}!is\_frontface@{is\_frontface}}
+\index{is\_frontface@{is\_frontface}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{is\_frontface()}{is\_frontface()}}
+{\footnotesize\ttfamily bool renderer\+::\+Mesh\+::is\+\_\+frontface (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classrenderer_1_1_mesh_ab0cb2995275ebaa8ae9e5fbb5519b7f3}{Vertex}} $\ast$const}]{projected\+\_\+vertices,  }\item[{const int $\ast$const}]{indices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 119 of file Mesh.\+cpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a09c57a296515d4db731b2aa0f4eba284}\label{classrenderer_1_1_mesh_a09c57a296515d4db731b2aa0f4eba284}} 
+\index{renderer::Mesh@{renderer::Mesh}!render@{render}}
+\index{render@{render}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{render()}{render()}}
+{\footnotesize\ttfamily void renderer\+::\+Mesh\+::render (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} $>$ \&}]{rasterizer }\end{DoxyParamCaption})}
+
+
+
+Definition at line 83 of file Mesh.\+cpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_aa2e7ea68a34e4f2f5853136c1efcff7a}\label{classrenderer_1_1_mesh_aa2e7ea68a34e4f2f5853136c1efcff7a}} 
+\index{renderer::Mesh@{renderer::Mesh}!set\_index@{set\_index}}
+\index{set\_index@{set\_index}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{set\_index()}{set\_index()}}
+{\footnotesize\ttfamily void renderer\+::\+Mesh\+::set\+\_\+index (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrenderer_1_1_mesh_a6a226cb85370a00787fe01f70a0b5ca2}{Index\+\_\+\+Buffer}} \&}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Guarda los indices de de los vertices. 
+\begin{DoxyParams}{Parameters}
+{\em Index\+\_\+\+Buffer} & indices de los Vertex\+\_\+\+Buffer de vertices y normales. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 77 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_acaed062c3d1abf115f22f7dba87ed69c}\label{classrenderer_1_1_mesh_acaed062c3d1abf115f22f7dba87ed69c}} 
+\index{renderer::Mesh@{renderer::Mesh}!set\_Transform@{set\_Transform}}
+\index{set\_Transform@{set\_Transform}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{set\_Transform()}{set\_Transform()}}
+{\footnotesize\ttfamily void renderer\+::\+Mesh\+::set\+\_\+\+Transform (\begin{DoxyParamCaption}\item[{Transformation3f \&}]{transformP }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Guarda el transform que recibe. 
+\begin{DoxyParams}{Parameters}
+{\em Transformation3f} & tranformacion de todas las matrices de position,rotacion y escala. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a6d48b23fa3c6fd467e15fdd4f12a6f5a}\label{classrenderer_1_1_mesh_a6d48b23fa3c6fd467e15fdd4f12a6f5a}} 
+\index{renderer::Mesh@{renderer::Mesh}!set\_Vertex@{set\_Vertex}}
+\index{set\_Vertex@{set\_Vertex}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{set\_Vertex()}{set\_Vertex()}}
+{\footnotesize\ttfamily void renderer\+::\+Mesh\+::set\+\_\+\+Vertex (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \&}]{vertex\+\_\+P,  }\item[{\mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} \&}]{normalsP,  }\item[{\mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}}}]{colorsP }\end{DoxyParamCaption})}
+
+Inicializa y redimensiona los vectores de los distintos tipos de procesado de los vertices y la direccion de la luz. 
+\begin{DoxyParams}{Parameters}
+{\em Vertex\+\_\+\+Buffer} & vector con las posiciones de los vertices de la malla. \\
+\hline
+{\em Vertex\+\_\+\+Buffer} & normales de los vertices de la malla. \\
+\hline
+{\em Vertex\+\_\+\+Colors} & colores de los vertices de la malla. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 9 of file Mesh.\+cpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a794be273829e332a1ba81d9f5af3b60e}\label{classrenderer_1_1_mesh_a794be273829e332a1ba81d9f5af3b60e}} 
+\index{renderer::Mesh@{renderer::Mesh}!update@{update}}
+\index{update@{update}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void renderer\+::\+Mesh\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 26 of file Mesh.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a895006513e43820bed66a13e6860c072}\label{classrenderer_1_1_mesh_a895006513e43820bed66a13e6860c072}} 
+\index{renderer::Mesh@{renderer::Mesh}!clipped\_vertices@{clipped\_vertices}}
+\index{clipped\_vertices@{clipped\_vertices}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{clipped\_vertices}{clipped\_vertices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{Vertex\+\_\+\+BufferI}} renderer\+::\+Mesh\+::clipped\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+vertices recortados (Se pasan al restericer) 
+
+Definition at line 53 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_ab375734fbd3ad209425e38f89f64ab5d}\label{classrenderer_1_1_mesh_ab375734fbd3ad209425e38f89f64ab5d}} 
+\index{renderer::Mesh@{renderer::Mesh}!display\_vertices@{display\_vertices}}
+\index{display\_vertices@{display\_vertices}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{display\_vertices}{display\_vertices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_ac5074bb370a7062d07e11150de94e8be}{Vertex\+\_\+\+BufferI}} renderer\+::\+Mesh\+::display\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+vertices a mostrar 
+
+Definition at line 55 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a67f50b2b651091b38567c8fd69e9e4b3}\label{classrenderer_1_1_mesh_a67f50b2b651091b38567c8fd69e9e4b3}} 
+\index{renderer::Mesh@{renderer::Mesh}!index\_positions@{index\_positions}}
+\index{index\_positions@{index\_positions}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{index\_positions}{index\_positions}}
+{\footnotesize\ttfamily vector$<$ int $>$ renderer\+::\+Mesh\+::index\+\_\+positions\hspace{0.3cm}{\ttfamily [private]}}
+
+Indices de los vertices y normales 
+
+Definition at line 46 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a548a365c33a70a93e8a1f7c4085b1ec8}\label{classrenderer_1_1_mesh_a548a365c33a70a93e8a1f7c4085b1ec8}} 
+\index{renderer::Mesh@{renderer::Mesh}!light\_colors@{light\_colors}}
+\index{light\_colors@{light\_colors}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{light\_colors}{light\_colors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}} renderer\+::\+Mesh\+::light\+\_\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+Colores de los vertices con iluminacion 
+
+Definition at line 49 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a6bf2d3288700befda4d24c6ee44e7a3f}\label{classrenderer_1_1_mesh_a6bf2d3288700befda4d24c6ee44e7a3f}} 
+\index{renderer::Mesh@{renderer::Mesh}!light\_vector@{light\_vector}}
+\index{light\_vector@{light\_vector}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{light\_vector}{light\_vector}}
+{\footnotesize\ttfamily Point3f renderer\+::\+Mesh\+::light\+\_\+vector\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 59 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a88ff332e89b6278946fc7f61f0014d0d}\label{classrenderer_1_1_mesh_a88ff332e89b6278946fc7f61f0014d0d}} 
+\index{renderer::Mesh@{renderer::Mesh}!normals@{normals}}
+\index{normals@{normals}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{normals}{normals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} renderer\+::\+Mesh\+::normals\hspace{0.3cm}{\ttfamily [private]}}
+
+Normales del modelo 
+
+Definition at line 45 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_aa32dd73ecaaaf1f5594f12c6208df116}\label{classrenderer_1_1_mesh_aa32dd73ecaaaf1f5594f12c6208df116}} 
+\index{renderer::Mesh@{renderer::Mesh}!original\_colors@{original\_colors}}
+\index{original\_colors@{original\_colors}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{original\_colors}{original\_colors}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_ab384ccca7ccccac4b935fe797ce0a7ea}{Vertex\+\_\+\+Colors}} renderer\+::\+Mesh\+::original\+\_\+colors\hspace{0.3cm}{\ttfamily [private]}}
+
+Colores de los vertices 
+
+Definition at line 47 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a6d4a64b911980ccd50a4fc54830ce653}\label{classrenderer_1_1_mesh_a6d4a64b911980ccd50a4fc54830ce653}} 
+\index{renderer::Mesh@{renderer::Mesh}!transform@{transform}}
+\index{transform@{transform}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{transform}{transform}}
+{\footnotesize\ttfamily Transformation3f renderer\+::\+Mesh\+::transform\hspace{0.3cm}{\ttfamily [private]}}
+
+transform del modelo al que perteneces 
+
+Definition at line 57 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a17a0e6c0c5d85b761ae43ec601a346ea}\label{classrenderer_1_1_mesh_a17a0e6c0c5d85b761ae43ec601a346ea}} 
+\index{renderer::Mesh@{renderer::Mesh}!transformed\_normals@{transformed\_normals}}
+\index{transformed\_normals@{transformed\_normals}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{transformed\_normals}{transformed\_normals}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} renderer\+::\+Mesh\+::transformed\+\_\+normals\hspace{0.3cm}{\ttfamily [private]}}
+
+Normales con transformacion aplicada 
+
+Definition at line 52 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a670137619aeda905f64bc784265ccbe5}\label{classrenderer_1_1_mesh_a670137619aeda905f64bc784265ccbe5}} 
+\index{renderer::Mesh@{renderer::Mesh}!transformed\_vertices@{transformed\_vertices}}
+\index{transformed\_vertices@{transformed\_vertices}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{transformed\_vertices}{transformed\_vertices}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} renderer\+::\+Mesh\+::transformed\+\_\+vertices\hspace{0.3cm}{\ttfamily [private]}}
+
+Vertices con transformacion aplicada 
+
+Definition at line 51 of file Mesh.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_mesh_a09d0844ff04aec6c504b44c261cf81e1}\label{classrenderer_1_1_mesh_a09d0844ff04aec6c504b44c261cf81e1}} 
+\index{renderer::Mesh@{renderer::Mesh}!vertexs@{vertexs}}
+\index{vertexs@{vertexs}!renderer::Mesh@{renderer::Mesh}}
+\subsubsection{\texorpdfstring{vertexs}{vertexs}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_mesh_a8c848a95f65fb25f6dc94dcb8879cf8b}{Vertex\+\_\+\+Buffer}} renderer\+::\+Mesh\+::vertexs\hspace{0.3cm}{\ttfamily [private]}}
+
+Vertices del modelo 
+
+Definition at line 44 of file Mesh.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Practica3\+D/\+Practica3\+D\+Avanzado/code/headers/\mbox{\hyperlink{_mesh_8hpp}{Mesh.\+hpp}}\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Practica3\+D/\+Practica3\+D\+Avanzado/code/sources/\mbox{\hyperlink{_mesh_8cpp}{Mesh.\+cpp}}\end{DoxyCompactItemize}

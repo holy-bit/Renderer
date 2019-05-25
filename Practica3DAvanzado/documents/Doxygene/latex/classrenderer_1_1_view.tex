@@ -1,0 +1,160 @@
+\hypertarget{classrenderer_1_1_view}{}\section{renderer\+::View Class Reference}
+\label{classrenderer_1_1_view}\index{renderer::View@{renderer::View}}
+
+
+{\ttfamily \#include $<$View.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_view_adc738c9a34cb291758e9a163c06b7024}{View}} (size\+\_\+t \mbox{\hyperlink{classrenderer_1_1_view_a5632e677221be9cb1120c432acb40893}{width}}, size\+\_\+t \mbox{\hyperlink{classrenderer_1_1_view_a7fa20c6d863431bb46aed44686231b4b}{height}})
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_view_ac38d65d08ad6ee7348f85a2bf7b03991}{update}} ()
+\item 
+void \mbox{\hyperlink{classrenderer_1_1_view_aea944e5b2ae8e4b6c403e4e0446ad021}{paint}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} \mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{Color\+\_\+\+Buffer}}
+\item 
+typedef \mbox{\hyperlink{structrenderer_1_1_color___buffer___rgba8888_1_1_color}{Color\+\_\+\+Buffer\+::\+Color}} \mbox{\hyperlink{classrenderer_1_1_view_a428e8cb10cb82eb1abf59719eb5ba830}{Color}}
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrenderer_1_1_view_a5632e677221be9cb1120c432acb40893}{width}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classrenderer_1_1_view_a7fa20c6d863431bb46aed44686231b4b}{height}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{Color\+\_\+\+Buffer}} \mbox{\hyperlink{classrenderer_1_1_view_a329c014c9553fe1d42e95a1a6dc99d58}{Color\+\_\+buffer}}
+\item 
+\mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{Color\+\_\+\+Buffer}} $>$ \mbox{\hyperlink{classrenderer_1_1_view_a77c9d19b0b18eafd4a4528c1d0115b7d}{rasterizer}}
+\item 
+vector$<$ \mbox{\hyperlink{classrenderer_1_1_model}{Model}} $>$ \mbox{\hyperlink{classrenderer_1_1_view_aa997e17a7f47acd5ead168a146233e4d}{models}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 18 of file View.\+hpp.
+
+
+
+\subsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_view_a428e8cb10cb82eb1abf59719eb5ba830}\label{classrenderer_1_1_view_a428e8cb10cb82eb1abf59719eb5ba830}} 
+\index{renderer::View@{renderer::View}!Color@{Color}}
+\index{Color@{Color}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{Color}{Color}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{structrenderer_1_1_color___buffer___rgba8888_1_1_color}{Color\+\_\+\+Buffer\+::\+Color}} \mbox{\hyperlink{classrenderer_1_1_view_a428e8cb10cb82eb1abf59719eb5ba830}{renderer\+::\+View\+::\+Color}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 23 of file View.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}\label{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}} 
+\index{renderer::View@{renderer::View}!Color\_Buffer@{Color\_Buffer}}
+\index{Color\_Buffer@{Color\_Buffer}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{Color\_Buffer}{Color\_Buffer}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{classrenderer_1_1_color___buffer___rgba8888}{Color\+\_\+\+Buffer\+\_\+\+Rgba8888}} \mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{renderer\+::\+View\+::\+Color\+\_\+\+Buffer}}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 22 of file View.\+hpp.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_view_adc738c9a34cb291758e9a163c06b7024}\label{classrenderer_1_1_view_adc738c9a34cb291758e9a163c06b7024}} 
+\index{renderer::View@{renderer::View}!View@{View}}
+\index{View@{View}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{View()}{View()}}
+{\footnotesize\ttfamily renderer\+::\+View\+::\+View (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{width,  }\item[{size\+\_\+t}]{height }\end{DoxyParamCaption})}
+
+Al crear el view (escena) por comodidad cargo los modelos y manipulo los valores de su transform para determinar su posicion, rotacion y escala. 
+
+Definition at line 26 of file View.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_view_aea944e5b2ae8e4b6c403e4e0446ad021}\label{classrenderer_1_1_view_aea944e5b2ae8e4b6c403e4e0446ad021}} 
+\index{renderer::View@{renderer::View}!paint@{paint}}
+\index{paint@{paint}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{paint()}{paint()}}
+{\footnotesize\ttfamily void renderer\+::\+View\+::paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line 98 of file View.\+cpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_ac38d65d08ad6ee7348f85a2bf7b03991}\label{classrenderer_1_1_view_ac38d65d08ad6ee7348f85a2bf7b03991}} 
+\index{renderer::View@{renderer::View}!update@{update}}
+\index{update@{update}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily void renderer\+::\+View\+::update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+En el update del view muevo a tiempo real los modelos que quiero que se muevan y llamo a los updates de cada uno de ellos. 
+
+Definition at line 72 of file View.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classrenderer_1_1_view_a329c014c9553fe1d42e95a1a6dc99d58}\label{classrenderer_1_1_view_a329c014c9553fe1d42e95a1a6dc99d58}} 
+\index{renderer::View@{renderer::View}!Color\_buffer@{Color\_buffer}}
+\index{Color\_buffer@{Color\_buffer}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{Color\_buffer}{Color\_buffer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{Color\+\_\+\+Buffer}} renderer\+::\+View\+::\+Color\+\_\+buffer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 30 of file View.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_a7fa20c6d863431bb46aed44686231b4b}\label{classrenderer_1_1_view_a7fa20c6d863431bb46aed44686231b4b}} 
+\index{renderer::View@{renderer::View}!height@{height}}
+\index{height@{height}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{height}{height}}
+{\footnotesize\ttfamily size\+\_\+t renderer\+::\+View\+::height\hspace{0.3cm}{\ttfamily [private]}}
+
+Alto de la pantalla 
+
+Definition at line 28 of file View.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_aa997e17a7f47acd5ead168a146233e4d}\label{classrenderer_1_1_view_aa997e17a7f47acd5ead168a146233e4d}} 
+\index{renderer::View@{renderer::View}!models@{models}}
+\index{models@{models}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{models}{models}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classrenderer_1_1_model}{Model}}$>$ renderer\+::\+View\+::models\hspace{0.3cm}{\ttfamily [private]}}
+
+Lista de los modelos en la view 
+
+Definition at line 33 of file View.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_a77c9d19b0b18eafd4a4528c1d0115b7d}\label{classrenderer_1_1_view_a77c9d19b0b18eafd4a4528c1d0115b7d}} 
+\index{renderer::View@{renderer::View}!rasterizer@{rasterizer}}
+\index{rasterizer@{rasterizer}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{rasterizer}{rasterizer}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classrenderer_1_1_rasterizer}{Rasterizer}}$<$ \mbox{\hyperlink{classrenderer_1_1_view_a21ded0a0afb4aea559b74d004cee798f}{Color\+\_\+\+Buffer}} $>$ renderer\+::\+View\+::rasterizer\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Definition at line 31 of file View.\+hpp.
+
+\mbox{\Hypertarget{classrenderer_1_1_view_a5632e677221be9cb1120c432acb40893}\label{classrenderer_1_1_view_a5632e677221be9cb1120c432acb40893}} 
+\index{renderer::View@{renderer::View}!width@{width}}
+\index{width@{width}!renderer::View@{renderer::View}}
+\subsubsection{\texorpdfstring{width}{width}}
+{\footnotesize\ttfamily size\+\_\+t renderer\+::\+View\+::width\hspace{0.3cm}{\ttfamily [private]}}
+
+Ancho de la pantalla 
+
+Definition at line 27 of file View.\+hpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Practica3\+D/\+Practica3\+D\+Avanzado/code/headers/\mbox{\hyperlink{_view_8hpp}{View.\+hpp}}\item 
+C\+:/\+Users/\+Versus/\+Desktop/\+Practica3\+D/\+Practica3\+D\+Avanzado/code/sources/\mbox{\hyperlink{_view_8cpp}{View.\+cpp}}\end{DoxyCompactItemize}
